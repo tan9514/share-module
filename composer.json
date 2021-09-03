@@ -1,0 +1,25 @@
+{
+    "name": "renjianhong/share-module",
+    "description": "Laravel8.0 Share management package",
+    "type": "laravel-module",
+    "authors": [
+        {
+            "name": "renjianhong",
+            "email": "15213026209@163.com"
+        }
+    ],
+    "extra": {
+        "module-dir": "Custom",
+        "laravel": {
+            "providers": [],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Share\\": ""
+        }
+    }
+}
