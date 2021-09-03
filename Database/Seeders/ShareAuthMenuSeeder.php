@@ -18,7 +18,7 @@ class ShareAuthMenuSeeder extends Seeder
             $arr = $this->defaultInfo();
             if(!empty($arr) && is_array($arr)) {
                 // 删除原来已存在的菜单
-                $module = config('cubeconfig.module') ?? "";
+                $module = config('shareconfig.module') ?? "";
                 if($module != ""){
                     DB::table('auth_menu')->where("module", $module)->delete();
                 }
@@ -69,7 +69,7 @@ class ShareAuthMenuSeeder extends Seeder
      */
     private function defaultInfo()
     {
-        $module = config('cubeconfig.module') ?? "";
+        $module = config('shareconfig.module') ?? "";
         $time = time();
         return [
             [
